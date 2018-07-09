@@ -51,17 +51,6 @@ class App extends React.Component {
                 error: "Please enter the value."
             });
         }
-        if (!city && country) {
-            this.setState({
-                temperature: undefined,
-                city: undefined,
-                country: undefined,
-                humidity: undefined,
-                description: undefined,
-                wind: undefined,
-                error: "Wrong value"
-            })
-        }
     };
     render() {
         return (
