@@ -46,6 +46,8 @@ class App extends React.Component {
                 humidity: undefined,
                 description: undefined,
                 wind: undefined,
+                coordLon: undefined,
+                coordLat: undefined,
                 error: "Please enter the value."
             });
         }
@@ -57,14 +59,17 @@ class App extends React.Component {
                     <div className="main">
                         <div className="container">
                             <div className="row">
-                                <div className="col-xs-5 title-container">
+                                <div className="col-xs-12 title-container">
                                     <Titles />
+
+                                </div>
+                                <div className="google-map">
                                     <GoogleMap
                                         coordLon={this.state.coordLon}
                                         coordLat={this.state.coordLat}
                                     />
                                 </div>
-                                <div className="col-xs-7 form-container">
+                                <div className="form-container">
                                     <Form getWeather={this.getWeather}/>
                                     <Weather
                                         temperature={this.state.temperature}
@@ -75,6 +80,7 @@ class App extends React.Component {
                                         wind={this.state.wind}
                                         error={this.state.error}
                                     />
+
                                 </div>
 
 
@@ -86,7 +92,7 @@ class App extends React.Component {
             </div>
         );
     }
-};
+}
 
 
 
