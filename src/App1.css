@@ -1,3 +1,7 @@
+body {
+    line-height: 1.09;
+}
+
 .wrapper {
     /*background: linear-gradient(to right, #b0a8a7, #6b6463);!*(to right, #e67e22, #e74c3c)*!*/
     height: 100vh;
@@ -77,7 +81,7 @@ button {
     cursor: pointer;
     background-color: #f16051;
     color: #fff;
-
+    height: 35px;
 }
 
 button:active {
@@ -121,4 +125,29 @@ button:hover {
 
 .google-map {
     float: right;
+}
+
+@media (max-width: 991px) {
+    .google-map {
+        display: none;
+    }
+    .form-container{
+        width: 100%;
+    }
+}
+@media (max-width: 423px) {
+    .title-container__title {
+        font-size: 30px;
+    }
+    input[type="text"] {
+        width: 90%;
+    }
+}
+
+@media (max-width: 243px) {
+    .title-container__title {
+        font-size: 25px;
+        line-height: 20px;
+    }
+
 }
