@@ -3,11 +3,9 @@ body {
 }
 
 .wrapper {
-    /*background: linear-gradient(to right, #b0a8a7, #6b6463);!*(to right, #e67e22, #e74c3c)*!*/
     height: 100vh;
     display: flex;
     background-color: grey;
-
 }
 
 .main {
@@ -134,10 +132,16 @@ button:hover {
     .form-container{
         width: 100%;
     }
+    .weather__info {
+        width: 90%;
+    }
 }
-@media (max-width: 423px) {
+@media (max-width: 489px) {
     .title-container__title {
         font-size: 30px;
+    }
+    .weather__info {
+        font-size: 18px;
     }
     input[type="text"] {
         width: 90%;
